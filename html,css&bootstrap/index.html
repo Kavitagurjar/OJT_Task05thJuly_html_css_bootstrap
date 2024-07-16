@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tags Demonstration</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, nav, main, section, article, aside, footer {
+            padding: 20px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-dark text-white text-center py-3">
+        <h1>HTML Tags Demonstration</h1>
+    </header>
+
+    <section id="text-formatting" class="container my-4">
+        <h2>Text Formatting</h2>
+        <p>This is a paragraph.</p>
+        <p><strong>Strong text</strong> and <em>emphasized text</em>.</p>
+        <p><u>Underlined text</u> and <small>small text</small>.</p>
+        <p><mark>Marked text</mark> and <del>deleted text</del>.</p>
+        <p><ins>Inserted text</ins>.</p>
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+        <p>Line break example<br>Next line of text.</p>
+        <hr>
+    </section>
+
+    <section id="lists" class="container my-4">
+        <h2>List Tags</h2>
+        <h3>Unordered List & Ordered List</h3>
+        <ul class="list-unstyled">
+            <li>Fruits
+                <ol class="list-unstyled ml-3">
+                    <li>Mangoes</li>
+                    <li>Banana</li>
+                    <li>Apples</li>
+                </ol>
+            </li>
+            <li>Vegetables
+                <ol class="list-unstyled ml-3">
+                    <li>Tomatos</li>
+                    <li>Potatoes</li>
+                    <li>Cucumber</li>
+                </ol>
+            </li>
+            <li>Dairy Products
+                <ol class="list-unstyled ml-3">
+                    <li>Milk</li>
+                    <li>Cheese</li>
+                    <li>Butter</li>
+                </ol>
+            </li>
+        </ul>
+
+        <h3>Description List</h3>
+        <dl class="row">
+            <dt class="col-sm-3">HTML</dt>
+            <dd class="col-sm-9">HyperText Markup Language</dd>
+            <dt class="col-sm-3">CSS</dt>
+            <dd class="col-sm-9">Cascading Style Sheets</dd>
+        </dl>
+    </section>
+
+    <section id="Link Tags" class="container my-4">
+        <h2>Link Tags and Images</h2>
+        <a href="https://www.google.com/">Google</a>
+        <br><br>
+        <a href="https://nstidehradun.dgt.gov.in/">NSTI Dehradun</a>
+        <br><br>
+        <a href="mailto:kavitagurjar09095@gmail.com">Gmail</a>
+        <br><br>
+        <p>This is an image:</p>
+        <img src="https://lh3.googleusercontent.com/p/AF1QipNPra-ZEJLCKI9QYuqD4-Wi8QhbaKmV-SZd_Bsi=s680-w680-h510" alt="Placeholder Image" class="img-fluid">
+    </section>
+
+    <section id="Multimedia Tags" class="container my-4">
+        <h2>Multimedia Tags</h2>
+        <audio controls class="w-100">
+            <source src="path/to/audio.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <h3>Video</h3>
+        <video controls class="w-100">
+            <source src="path/to/video.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <section id="Tables" class="container my-4">
+        <h2>Tables</h2>
+        <table class="table table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Location</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Kavita</td>
+                    <td>23</td>
+                    <td>Bareilly</td>
+                </tr>
+                <tr>
+                    <td>Ramakant</td>
+                    <td>25</td>
+                    <td>Kanpur</td>
+                </tr>
+            </tbody>
+            <tfoot class="thead-light">
+                <tr>
+                    <td>Kunjesh</td>
+                    <td>20</td>
+                    <td>Bihar</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+
+    <section id="Forms" class="container my-4">
+        <h2>Forms</h2>
+        <form action="submit-form.php" method="post">
+            <fieldset class="form-group border p-3">
+                <legend class="w-auto px-2">Personal Information</legend>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" class="form-control"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" class="form-control">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </fieldset>
+        </form>
+    </section>
+
+    <section id="Semantic Tags" class="container my-4">
+        <h2>Semantic Tags</h2>
+        <article class="border p-3 mb-3">
+            <header>
+                <h3>Article Header</h3>
+            </header>
+            <p>This is an article.</p>
+            <footer>Article Footer</footer>
+        </article>
+        <aside class="border p-3 mb-3">
+            <p>This is an aside section.</p>
+        </aside>
+        <figure class="text-center">
+            <img src="https://via.placeholder.com/150" alt="Placeholder Image" class="img-fluid">
+            <figcaption>This is a caption for the image.</figcaption>
+        </figure>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 HTML Tags Demonstration</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        console.log("Hello, world!");
+    </script>
+</body>
+</html>
